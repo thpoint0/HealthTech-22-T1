@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/healthtech-project/static/css/main.e6e1897b.css",
-    "main.js": "/healthtech-project/static/js/main.587dab40.js",
+    "main.css": "/healthtech-project/static/css/main.f74d082e.css",
+    "main.js": "/healthtech-project/static/js/main.56a1d99a.js",
     "index.html": "/healthtech-project/index.html",
-    "main.e6e1897b.css.map": "/healthtech-project/static/css/main.e6e1897b.css.map",
-    "main.587dab40.js.map": "/healthtech-project/static/js/main.587dab40.js.map"
+    "main.f74d082e.css.map": "/healthtech-project/static/css/main.f74d082e.css.map",
+    "main.56a1d99a.js.map": "/healthtech-project/static/js/main.56a1d99a.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6e1897b.css",
-    "static/js/main.587dab40.js"
+    "static/css/main.f74d082e.css",
+    "static/js/main.56a1d99a.js"
   ]
 }
