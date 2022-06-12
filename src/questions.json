@@ -1,0 +1,112 @@
+[
+	{
+		"id": "a",
+		"question": "How are you feeling today?",
+		"choice": [
+			{
+				"id": "aa",
+				"text": "Terrible"
+			},
+			{
+				"id": "ab",
+				"text": "Bad"
+			},
+			{
+				"id": "ac",
+				"text": "Okay"
+			},
+			{
+				"id": "ad",
+				"text": "Good"
+			},
+			{
+				"id": "ae",
+				"text": "Amazing"
+			}
+		]
+	},
+	{
+		"id": "b",
+		"question": "How often did you have trouble falling asleep this week?",
+		"choice": [
+			{
+				"id": "ba",
+				"text": "Never"
+			},
+			{
+				"id": "bb",
+				"text": "A few days"
+			},
+			{
+				"id": "bc",
+				"text": "Every day"
+			}
+		]
+	},
+	{
+		"id": "c",
+		"question": "How often have you had trouble taking your prescribed medication(s)?",
+		"choice": [
+			{
+				"id": "ca",
+				"text": "Never"
+			},
+			{
+				"id": "cb",
+				"text": "Once in a while"
+			},
+			{
+				"id": "cc",
+				"text": "Often"
+			},
+			{
+				"id": "cd",
+				"text": "I don't have any prescribed medications"
+			}
+		]
+	},
+	{
+		"id": "d",
+		"question": "How would you describe you appetite or eating habits in the past 5 days?",
+		"choice": [
+			{
+				"id": "da",
+				"text": "Less hungry than usual"
+			},
+			{
+				"id": "db",
+				"text": "Normal"
+			},
+			{
+				"id": "dc",
+				"text": "More hungry than usual"
+			},
+			{
+				"id": "dd",
+				"text": "I don't know"
+			}
+		]
+	},
+	{
+		"id": "e",
+		"question": "About how many times over the past 2 weeks have you been bothered by low feelings, stress or sadness?",
+		"choice": [
+			{
+				"id": "ea",
+				"text": "0 - 2 times"
+			},
+			{
+				"id": "eb",
+				"text": "Every other day"
+			},
+			{
+				"id": "ec",
+				"text": "Every day"
+			},
+			{
+				"id": "ed",
+				"text": "I don't know"
+			}
+		]
+	}
+]

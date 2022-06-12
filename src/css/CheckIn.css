@@ -1,0 +1,75 @@
+.checkIn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+
+.progress-bar {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.question {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.question > div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+
+.input-container {
+	width: 100%;
+	max-width: 400px;
+	overflow: hidden;
+	display: flex;
+	border: var(--border-solid);
+	border-radius: 15px;
+}
+
+.input-container input {
+  display: none;
+}
+
+.input-container label {
+	width: 100%;
+	padding: 15px;
+
+  cursor: pointer;
+  user-select: none;
+	text-align: center;
+
+	background-color: var(--white);
+	transition: background-color 150ms, color 150ms;
+}
+.input-container label:hover {
+  background-color: var(--green-light);
+}
+.input-container input:checked + label {
+	color: var(--white);
+  background-color: var(--green-dark);
+}
+
+.question-nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.finished h2 strong {
+	font-size: 1.6em;
+}
+.finished .progress button a {
+	text-decoration: none;
+	color: inherit;
+}

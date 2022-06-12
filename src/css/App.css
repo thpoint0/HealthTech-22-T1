@@ -1,0 +1,106 @@
+:root {
+  --white: #FCFCFC;
+  --brown: #C0B6AC;
+  --yellow-light: #FBF5DB;
+  --yellow-dark: #FFD21F;
+  --green-very-light: #EEF3E7;
+  --green-light: #CCDBB8;
+  --green-dark: #76944C;
+
+  --txt: #000000;
+  --txt-light: #241D00;
+  
+  --border-solid: 2px solid var(--brown);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--txt);
+  background-color: var(--yellow-light);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Spectral', serif;
+  font-weight: 400;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.85em;
+  text-transform: capitalize;
+
+  background-color: var(--white);
+  border: 2px solid black;
+  box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 150ms, transform 150ms;
+}
+button:hover {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transform: translate(3px, 3px);
+}
+
+/* Utilities */
+.card {
+  padding: 20px 25px;
+  background-color: var(--white);
+  border: var(--border-solid);
+  border-radius: 15px;
+}
+
+button.disabled {
+  color: darkgray;
+  background-color: lightgray;
+  border: 2px dashed darkgray;
+}
+
+.special {
+  background-color: var(--yellow-dark);
+  border: none;
+}
+
+.bar {
+  width: 100%;
+  height: 20px;
+  background-color: var(--brown);
+}
+.bar > div {
+  height: 100%;
+  background-color: var(--yellow-dark);
+}
+
+.img-container {
+  display: flex;
+}
+img {
+  width: 100%;
+}
+/* end Utilities */
+
+.App {
+  display: flex;
+}
+
+main {
+  margin: 60px;
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    display: initial;
+  }
+}

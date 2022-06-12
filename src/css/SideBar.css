@@ -1,0 +1,154 @@
+/* Hamburger */
+#menu-toggle {
+	display: none;
+}
+.menu-button-container {
+  z-index: 1;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	visibility: hidden;
+	width: 32px;
+	height: 19px;
+  cursor: pointer;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-button-top,
+.menu-button-middle,
+.menu-button-bottom {
+	display: block;
+  position: absolute;
+  height: 2px;
+  width: 30px;
+
+	border: 1px solid var(--txt);
+	border-radius: 100px;
+
+  transition: border-color 200ms, border-width 200ms, border-radius 200ms, height 200ms, width 200ms;
+}
+.menu-button-top {
+	margin-top: -15px;
+	border-width: 2px;
+	border-bottom: none;
+}
+.menu-button-bottom {
+	margin-top: 15px;
+	border-width: 2px;
+	border-top: none;
+}
+.menu-button-container:hover .menu-button-top,
+.menu-button-container:hover .menu-button-middle,
+.menu-button-container:hover .menu-button-bottom {
+	border-color: var(--brown);
+}
+#menu-toggle:checked + .menu-button-container .menu-button-top {
+	height: 15px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+#menu-toggle:checked + .menu-button-container .menu-button-middle {
+	width: 15px;
+}
+#menu-toggle:checked + .menu-button-container .menu-button-bottom {
+	height: 15px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+/* end Hamburger */
+
+/* Navigation */
+.menu-content {
+	position: sticky;
+	top: 0;
+	width: 350px;
+	min-width: 350px;
+	height: 100vh;
+	padding: 60px 0;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	background-color: var(--green-light);
+	border-top-right-radius: 60px;
+	border-bottom-right-radius: 60px;
+}
+
+.company {
+	padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.company .logo {
+  aspect-ratio: 1;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.menu-items {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 0;
+
+	list-style-type: none;
+}
+.menu-items li {
+	width: 100%;
+	user-select: none;
+	-webkit-user-select: none;
+}
+.menu-items a {
+	padding: 20px 25px;
+
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: inherit;
+	text-decoration: none;
+}
+.menu-items a svg {
+	font-size: 2em;
+}
+.menu-items a.active {
+	color: var(--white);
+	background-color: var(--green-dark);
+}
+/* end Navigation */
+
+@media screen and (max-width: 800px) {
+	/* Fixes menu keeping width in Safari */
+	.sideBar {
+		width: 0;
+		height: 0;
+	}
+
+	.menu-button-container {
+		visibility: visible;
+	}
+
+	.menu-content {
+		position: fixed;
+		top: 0;
+		left: -350px;
+
+		transition: transform 200ms;
+	}
+	#menu-toggle:checked ~ .menu-content {
+		transform: translate3d(350px, 0, 0);
+	}
+}

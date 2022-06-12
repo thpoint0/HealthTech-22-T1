@@ -1,0 +1,62 @@
+.rewards h1 {
+	margin-bottom: 40px;
+}
+.rewards p {
+	margin-bottom: 160px;
+}
+
+.progress {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 10px;
+}
+.progress button {
+	align-self: flex-end;
+}
+
+.panels {
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+}
+.panels .card {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.activity .item {
+	padding: 25px 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+
+	color: var(--txt-light);
+	background-color: var(--green-very-light);
+}
+
+.reward-items > div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+.reward {
+	padding: 10px 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+
+	font-weight: 600;
+	border: 2px dashed black;
+}
+.reward .img-container {
+	width: 60px;
+}

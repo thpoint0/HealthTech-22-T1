@@ -1,0 +1,41 @@
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-evenly;
+  gap: 40px;
+}
+
+.dashboard .card {
+  max-width: 400px;
+  min-height: 200px;
+}
+.dashboard section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.dashboard section h2 {
+  align-self: flex-start;
+}
+.dashboard section button {
+  align-self: flex-end;
+}
+
+#welcome {
+  width: 100%;
+}
+#welcome .card {
+  max-width: none;
+  width: 100%;
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#welcome h1 {
+  font-size: 2em;
+}
